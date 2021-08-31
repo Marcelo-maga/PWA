@@ -234,3 +234,23 @@
     --ion-card-background: #1e1e1e;
   }
 }
+
+.my-custom-class {
+  --background: #dfdfdf
+  .alert-title{
+    color: red;
+    text-align: center;
+    font-weight: bold;
+  }
+  .alert-sub-title{
+    color: blue;
+  }
+  .alert-message{
+    color: #252726;
+  }
+  .alert-button {
+    color: blue;
+    border: 1px solid red;
+    margin: auto
+  }
+}

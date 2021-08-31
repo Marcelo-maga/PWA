@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref='/' ></ion-back-button>
+    </ion-buttons>
+    <ion-title>Cadastro de Produto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="conteudo">
+    <form>
+      <ion-item>
+        <ion-label position='floating'>Descrição</ion-label>
+        <ion-input type='text' placeholder='Digite a descrição' nome='descricao' [(ngModel)]='produto.descricao'></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position='floating'>Preço</ion-label>
+        <ion-input type='number' placeholder='Digite o preço' nome='preco' [(ngModel)]='produto.preco'></ion-input>
+      </ion-item> 
+
+      <ion-item>
+        <ion-label position='floating'>Validade</ion-label>
+        <ion-datetime displayFormat='DD/MM/YYYY' placeholder='Digite a descrição' nome='descricao' max='2030' [(ngModel)]='produto.validade'></ion-input>
+      </ion-item>
+
+      <ion-buttom (click)='salvar' >
+        Salvar
+      </ion-buttom>
+    </form>
+  </div>
+</ion-content>
